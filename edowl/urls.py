@@ -9,12 +9,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/token',TokenObtainPairView.as_view()),
-    # path('api/token/refresh/',TokenRefreshView.as_view()),
-    # path('api/token/verify/',TokenVerifyView.as_view()),
-    # path('auth/', include('djoser.urls')),
-    # path('auth/', include('djoser.urls.jwt')),
-    # path('auth/', include('djoser.social.urls')),
     path('api/',include('users.urls')),
     path('api/',include('module.urls')),
     path('api-auth/',include('rest_framework.urls')),
